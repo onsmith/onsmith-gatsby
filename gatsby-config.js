@@ -1,36 +1,56 @@
 module.exports = {
+  // Site metadata for reusing common pieces of data across the site
+  // See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/#sitemetadata
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    url: 'https://onsmith.com',
   },
+
+  // Plugins
+  // See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/#plugins
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
+    // <head> tag management
+    // See: https://github.com/nfl/react-helmet
+    'gatsby-plugin-react-helmet',
+
+    // Image assets
+    'gatsby-plugin-image', // React <StaticImage> component
+    'gatsby-transformer-sharp', // Dynamic image resizing and cropping
+    'gatsby-plugin-sharp', // Sharp image processing library
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+
+    // SASS/SCSS
+    'gatsby-plugin-sass',
+
+    // Imports relative to root
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-root-import',
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        components: `${__dirname}/src/components`,
+        hooks: `${__dirname}/src/hooks`,
+        pages: `${__dirname}/src/pages`,
+        styles: `${__dirname}/src/styles`,
       },
     },
-    `gatsby-plugin-gatsby-cloud`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+
+    // PWA manifest file
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'onsmith.com',
+        short_name: 'onsmith',
+        start_url: '/',
+        background_color: '#1a2e3a',
+        theme_color: '#1a2e3a',
+        display: 'minimal-ui',
+        icon: 'src/images/gatsby-icon.png',
+      },
+    },
+    'gatsby-plugin-offline',
   ],
-}
+};

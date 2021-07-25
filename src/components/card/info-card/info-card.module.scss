@@ -1,0 +1,56 @@
+/**
+ * Index sections
+ */
+
+@use 'src/styles/palette';
+
+.card-body {
+  min-height: 100vh;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &:nth-of-type(2n + 1) {
+    color: palette.$primary-color-light;
+    background-color: palette.$primary-color-dark;
+
+    a {
+      font-weight: normal;
+      color: darken(palette.$primary-color-light, 30%);
+
+      &:hover,
+      &:active {
+        text-decoration: none;
+      }
+
+      &:hover {
+        color: darken(palette.$primary-color-light, 15%);
+      }
+    }
+  }
+
+  &:nth-of-type(2n) {
+    color: palette.$secondary-color-dark;
+    background-color: palette.$secondary-color-light;
+
+    a {
+      &:hover,
+      &:active {
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    display: inline-flex;
+    vertical-align: top;
+    min-height: initial;
+    height: 38em;
+    width: 33em;
+    margin: 1em;
+    padding: 2em;
+  }
+}

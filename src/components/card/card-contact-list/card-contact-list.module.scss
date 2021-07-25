@@ -1,0 +1,31 @@
+/**
+ * Contact list
+ */
+.index-section-contact-list {
+  padding-left: 0;
+  margin: 0.5em 0;
+  list-style-type: none;
+
+  .index-section-contact-icon {
+    display: inline-block;
+    font-size: 1.7em;
+    margin: 0 0.5em;
+    text-align: center;
+
+    > a {
+      color: palette.$primary-color-light;
+      display: inline-block;
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+      border-radius: 50%;
+      transition: color 300ms, background-color 300ms;
+
+      &:hover,
+      &:active {
+        color: palette.$primary-color-dark;
+        background-color: palette.$primary-color-light;
+      }
+    }
+  }
+}

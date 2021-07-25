@@ -1,0 +1,15 @@
+/**
+ * Color variables
+ */
+
+// white-on-blue
+$primary-color-dark: #3d6b87;
+$primary-color-light: lighten($primary-color-dark, 50%);
+
+// gray-on-cream
+$secondary-color-light: #ece8df; //#f6f2eb;
+$secondary-color-dark: #004873; //darken($primary-color-dark, 15%);
+
+// white-on-slate
+$tertiary-color-light: $primary-color-light;
+$tertiary-color-dark: darken($primary-color-dark, 22%);
