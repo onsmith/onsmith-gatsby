@@ -160,7 +160,7 @@ export default function IndexPage() {
           Most recently, I teach COMP 301 Foundations of Programming (Java OOP,
           testing, design patterns, GUIs, frameworks, concurrency) and COMP 455
           Models of Computation (automata, formal languages, grammars, regular
-          expressions, turning machines, decidability).
+          expressions, Turing machines, decidability).
         </CardText>
       </InfoCard>
 
