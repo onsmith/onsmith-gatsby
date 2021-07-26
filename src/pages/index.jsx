@@ -56,8 +56,8 @@ export default function IndexPage() {
         </CardText>
 
         <CardText>
-          I received a PhD in Computer Science from UNC Chapel Hill in 2021,
-          with published research in video codec design, frameless video
+          In 2021, I received a PhD in Computer Science from UNC Chapel Hill. My
+          published research includes video codec design, frameless video
           representation, and CS education.
         </CardText>
       </InfoCard>
@@ -68,15 +68,15 @@ export default function IndexPage() {
         <CardTitle>Mission</CardTitle>
 
         <CardText>
+          I try to make the world a better place by respecting, inspiring,
+          enabling, and listening to those around me.
+        </CardText>
+
+        <CardText>
           My interests include developing equitable and scalable tools for
           undergraduate CS education; web technology; data compression;
           entrepreneurship; cloud services; and software engineering best
           practices.
-        </CardText>
-
-        <CardText>
-          I try to make the world a better place by respecting, inspiring,
-          enabling, and listening to those around me.
         </CardText>
       </InfoCard>
 
