@@ -1,12 +1,15 @@
 /**
  * Contact list
  */
-.index-section-contact-list {
+
+@use 'src/styles/palette';
+
+.card-contact-list {
   padding-left: 0;
   margin: 0.5em 0;
   list-style-type: none;
 
-  .index-section-contact-icon {
+  .card-contact-icon {
     display: inline-block;
     font-size: 1.7em;
     margin: 0 0.5em;

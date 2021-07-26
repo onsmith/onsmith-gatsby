@@ -1,32 +1,32 @@
 import * as React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
-  faBeer,
-  faBook,
+  faChalkboardTeacher,
   faCoffee,
-  faCompass,
   faDatabase,
   faDesktop,
   faEnvelope,
-  faFlask,
+  faFileArchive,
   faGem,
   faGraduationCap,
+  faHandsHelping,
+  faMapMarkerAlt,
   faTerminal,
+  faTh,
   faUniversity,
   faVideo,
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
   faAws,
-  faCss3,
-  faEmber,
-  faFontAwesome,
+  faDocker,
   faGithub,
   faLinkedin,
-  faMicrosoft,
+  faJs,
   faPython,
+  faReact,
   faTwitter,
+  faJava,
 } from '@fortawesome/free-brands-svg-icons';
 
 import Layout from 'components/layout/layout';
@@ -35,6 +35,12 @@ import CardText from 'components/card/card-text/card-text';
 import CardTitle from 'components/card/card-title/card-title';
 import CardIcon from 'components/card/card-icon/card-icon';
 import CardPhoto from 'components/card/card-photo/card-photo';
+import CardList from 'components/card/card-list/card-list';
+import CardListItem from 'components/card/card-list/card-list-item';
+import CardContactList from 'components/card/card-contact-list/contact-list';
+import CardContactListItem from 'components/card/card-contact-list/contact-list-item';
+
+import CV from '../static/SmithAaronTeachingCV.pdf';
 
 export default function IndexPage() {
   return (
@@ -42,16 +48,66 @@ export default function IndexPage() {
       <InfoCard>
         <CardPhoto />
 
-        <CardTitle>Hi. I&apos;m Aaron.</CardTitle>
+        <CardTitle>Hi, I&apos;m Aaron.</CardTitle>
 
         <CardText>
-          I am a Teaching Assistant Professor of Computer&nbsp;Science at UNC
-          Chapel Hill.
+          I&apos;m a Teaching Assistant Professor of Computer&nbsp;Science at
+          UNC Chapel Hill.
+        </CardText>
+
+        <CardText>
+          I received a PhD in Computer Science from UNC Chapel Hill in 2021,
+          with published research in video codec design, frameless video
+          representation, and CS education.
         </CardText>
       </InfoCard>
 
       <InfoCard>
-        <CardIcon icon={faCompass} />
+        <CardIcon icon={faHandsHelping} />
+
+        <CardTitle>Mission</CardTitle>
+
+        <CardText>
+          My interests include developing equitable and scalable tools for
+          undergraduate CS education; web technology; data compression;
+          entrepreneurship; cloud services; and software engineering best
+          practices.
+        </CardText>
+
+        <CardText>
+          I try to make the world a better place by respecting, inspiring,
+          enabling, and listening to those around me.
+        </CardText>
+      </InfoCard>
+
+      <InfoCard>
+        <CardIcon icon={faGraduationCap} />
+
+        <CardTitle>Education</CardTitle>
+
+        <CardText>
+          I studied Computer Science at the{' '}
+          <a href="https://www.unc.edu/" target="_blank" rel="noreferrer">
+            University of North Carolina at Chapel Hill
+          </a>{' '}
+          from 2014 to 2021. I received a M.S. in 2019 and a Ph.D. in 2021.
+        </CardText>
+
+        <CardText>
+          I attended{' '}
+          <a href="https://www.coastal.edu/" target="_blank" rel="noreferrer">
+            Coastal Carolina University
+          </a>{' '}
+          in Conway, SC for undergrad from 2010 to 2014. I received B.S. degrees
+          in Applied Mathematics and Computer Science, with a 4.0 cumulative
+          GPA.
+        </CardText>
+      </InfoCard>
+
+      <InfoCard>
+        <CardIcon icon={faMapMarkerAlt} />
+
+        <CardTitle>Location</CardTitle>
 
         <CardText>
           I was born in <strong>Worcester,&nbsp;MA</strong>, grew up in{' '}
@@ -61,175 +117,107 @@ export default function IndexPage() {
       </InfoCard>
 
       <InfoCard>
-        <CardIcon icon={faGraduationCap} />
+        <CardIcon icon={faFileArchive} />
+
+        <CardTitle>Compression Research</CardTitle>
 
         <CardText>
-          In 2021, I received a Ph.D. degree
-          <br />
-          in Computer Science from UNC Chapel Hill.
-        </CardText>
-
-        <CardText>
-          In 2019, I received a M.S. degree
-          <br />
-          in Computer Science from UNC Chapel Hill.
-        </CardText>
-
-        <CardText>
-          In 2014, I received B.S. degrees
-          <br />
-          in Computer Science and Applied Mathematics
-          <br />
-          from Coastal Carolina University.
-        </CardText>
-      </InfoCard>
-
-      <InfoCard>
-        <CardIcon icon={faFlask} />
-
-        <CardText>
-          My Ph.D. thesis argues that video content should be encoded using a
-          flexible initial representation that supports top-down,
-          receiver-driven adaptation.
+          My Ph.D. research was in video compression. My thesis argued that
+          video content should be encoded at the source using a flexible initial
+          representation that supports top-down, receiver-driven adaptation for
+          use by diverse applications.
         </CardText>
       </InfoCard>
 
       <InfoCard>
         <CardIcon icon={faUniversity} />
 
+        <CardTitle>Educational Research</CardTitle>
+
         <CardText>
-          I also help teach at UNC. I help instruct our{' '}
-          <strong>Java&nbsp;CS2</strong> course as well as{' '}
-          <strong>Introduction to Web Programming</strong>.
+          I am very interested in educational research, particularly in
+          developing teaching resources that scale to large course sizes.
         </CardText>
 
         <CardText>
-          I developed{' '}
+          I created{' '}
           <a href="https://mydigitalhand.org" target="_blank" rel="noreferrer">
             My&nbsp;Digital&nbsp;Hand
           </a>{' '}
-          to improve student-led office&nbsp;hours in large CS&nbsp;courses like
-          those at UNC.
+          to improve student-led office&nbsp;hours in large CS&nbsp;courses. My
+          Digital Hand is used by numerous universities in North America,
+          including UNC.
         </CardText>
       </InfoCard>
 
       <InfoCard>
-        <CardIcon icon={faBeer} />
+        <CardIcon icon={faChalkboardTeacher} />
+
+        <CardTitle>Teaching</CardTitle>
 
         <CardText>
-          In my free time, I like to
-          <strong>tinker with software</strong>,
-          <strong>play video games</strong>,<strong>follow politics</strong>,
-          <strong>hang out at bars</strong>,<strong>watch sports</strong> (go
-          Heels!), and
-          <strong>travel</strong>.
+          I have been the primary instructor for CS courses at UNC since 2019.
+          Most recently, I teach COMP 301 Foundations of Programming (Java OOP,
+          testing, design patterns, GUIs, frameworks, concurrency) and COMP 455
+          Models of Computation (automata, formal languages, grammars, regular
+          expressions, turning machines, decidability).
         </CardText>
-      </InfoCard>
-
-      <InfoCard>
-        <CardIcon icon={faBook} />
-
-        <CardText>I have many interests! Here are a few:</CardText>
-
-        <ul className="index-section-list">
-          <li>entrepreneurship</li>
-          <li>pedagogy</li>
-          <li>physics</li>
-          <li>web development</li>
-          <li>software design</li>
-          <li>politics</li>
-          <li>video games</li>
-          <li>NFL</li>
-          <li>coffee</li>
-          <li>philosophy</li>
-        </ul>
       </InfoCard>
 
       <InfoCard>
         <CardIcon icon={faDesktop} />
 
-        <CardText>...and here are some technologies I love:</CardText>
+        <CardText>Here are some technologies I love:</CardText>
 
-        <ul className="index-section-list">
-          <li>
-            <FontAwesomeIcon icon={faEmber} /> EmberJS
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faMicrosoft} /> Visual Studio
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faDatabase} /> PostgreSQL
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faAws} /> AWS
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faPython} /> Python
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faFontAwesome} /> Font Awesome
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faCss3} /> Bootstrap 4
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faVideo} /> HEVC
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faTerminal} /> C / C++
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faGem} /> Ruby on Rails
-          </li>
-        </ul>
+        <CardList>
+          <CardListItem icon={faJs}>TypeScript</CardListItem>
+          <CardListItem icon={faReact}>React</CardListItem>
+          <CardListItem icon={faDatabase}>PostgreSQL</CardListItem>
+          <CardListItem icon={faAws}>AWS</CardListItem>
+          <CardListItem icon={faPython}>Python</CardListItem>
+          <CardListItem icon={faVideo}>H.265/HEVC</CardListItem>
+          <CardListItem icon={faTerminal}>C/C++</CardListItem>
+          <CardListItem icon={faJava}>Java</CardListItem>
+          <CardListItem icon={faDocker}>Docker</CardListItem>
+          <CardListItem icon={faGem}>Ruby on Rails</CardListItem>
+          <CardListItem icon={faTh}>MATLAB</CardListItem>
+        </CardList>
       </InfoCard>
 
       <InfoCard>
         <CardIcon icon={faCoffee} />
 
         <CardText>
-          Want to stay in touch, grab a coffee, or have a conversation?
+          Want to learn more? Check out{' '}
+          <a href={CV} rel="noreferrer" target="_blank">
+            my curriculum vitae
+          </a>
+          .
+        </CardText>
+
+        <CardText>
+          Want to get in touch, grab a coffee, or have a conversation?
           Here&apos;s how to reach me.
         </CardText>
 
-        <ul className="index-section-contact-list">
-          <li className="index-section-contact-icon index-section-email">
-            <a
-              href="mailto:ajsmith7@coastal.edu"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-          </li>
-          <li className="index-section-contact-icon index-section-linkedin">
-            <a
-              href="https://www.linkedin.com/in/acodesmith/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-          </li>
-          <li className="index-section-contact-icon index-section-twitter">
-            <a
-              href="https://twitter.com/ajcodesmith"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faTwitter} />
-            </a>
-          </li>
-          <li className="index-section-contact-icon index-section-github">
-            <a
-              href="https://github.com/onsmith"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} />
-            </a>
-          </li>
-        </ul>
+        <CardContactList>
+          <CardContactListItem
+            href="mailto:onsmith@cs.unc.edu"
+            icon={faEnvelope}
+          />
+          <CardContactListItem
+            href="https://www.linkedin.com/in/onsmith13/"
+            icon={faLinkedin}
+          />
+          <CardContactListItem
+            href="https://twitter.com/onsmith13"
+            icon={faTwitter}
+          />
+          <CardContactListItem
+            href="https://github.com/onsmith"
+            icon={faGithub}
+          />
+        </CardContactList>
       </InfoCard>
     </Layout>
   );
