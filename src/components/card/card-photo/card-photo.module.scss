@@ -4,7 +4,11 @@
   margin: 1em 0.5em;
   width: 250px;
   height: 250px;
-  border-radius: 50%;
-  background-color: palette.$primary-color-light;
   border: 3px solid palette.$primary-color-light;
+  border-radius: 50%;
+
+  img {
+    background-color: palette.$primary-color-light;
+    border-radius: 50%;
+  }
 }
