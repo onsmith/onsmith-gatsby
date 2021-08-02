@@ -75,8 +75,7 @@ export default function IndexPage() {
         <CardText>
           My interests include developing equitable and scalable tools for
           undergraduate CS education, web technology, data compression,
-          entrepreneurship, cloud services, and software engineering best
-          practices.
+          entrepreneurship, cloud services, and software engineering.
         </CardText>
       </InfoCard>
 
