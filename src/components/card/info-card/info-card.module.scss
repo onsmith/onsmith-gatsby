@@ -21,11 +21,6 @@
       font-weight: normal;
       color: darken(palette.$primary-color-light, 30%);
 
-      &:hover,
-      &:active {
-        text-decoration: none;
-      }
-
       &:hover {
         color: darken(palette.$primary-color-light, 15%);
       }
@@ -37,9 +32,11 @@
     background-color: palette.$secondary-color-light;
 
     a {
-      &:hover,
-      &:active {
-        text-decoration: none;
+      font-weight: normal;
+      color: darken(palette.$secondary-color-light, 40%);
+
+      &:hover {
+        color: darken(palette.$secondary-color-light, 60%);
       }
     }
   }

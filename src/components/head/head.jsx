@@ -11,7 +11,7 @@ export default function Head({ title }) {
   const baseUrl = useBaseUrl();
 
   title = title ? `${title} | onsmith` : "Aaron Smith's Personal Site";
-  const image = `${baseUrl}/images/gatsby-icon.png`;
+  const image = `${baseUrl}/images/icon.png`;
 
   return (
     <Helmet defer={false}>
