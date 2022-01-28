@@ -26,7 +26,7 @@ export default function Head({ title }) {
       <meta property="og:url" content={`${baseUrl}${pathname}`} />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="onsmith" />
+      <meta name="twitter:creator" content="onsmith13" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />

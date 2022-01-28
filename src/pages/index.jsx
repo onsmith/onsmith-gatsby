@@ -121,10 +121,10 @@ export default function IndexPage() {
         <CardTitle>Compression Research</CardTitle>
 
         <CardText>
-          My Ph.D. research was in video compression. My thesis argued that
-          video content should be encoded at the source using a flexible initial
+          My Ph.D. research is in video compression. My thesis argues that video
+          content should be encoded at the source using a flexible initial
           representation that supports top-down, receiver-driven adaptation for
-          use by diverse applications.
+          use by diverse client applications.
         </CardText>
       </InfoCard>
 
@@ -161,6 +161,11 @@ export default function IndexPage() {
           Models of Computation (automata, formal languages, grammars, regular
           expressions, Turing machines, decidability).
         </CardText>
+
+        <CardText>
+          In the past, I helped teach courses in Data Compression, Modern Web
+          Programming, Software Engineering, and Intro to Programming.
+        </CardText>
       </InfoCard>
 
       <InfoCard>
@@ -178,7 +183,7 @@ export default function IndexPage() {
           <CardListItem icon={faTerminal}>C/C++</CardListItem>
           <CardListItem icon={faJava}>Java</CardListItem>
           <CardListItem icon={faDocker}>Docker</CardListItem>
-          <CardListItem icon={faGem}>Ruby on Rails</CardListItem>
+          <CardListItem icon={faGem}>Rails</CardListItem>
           <CardListItem icon={faTh}>MATLAB</CardListItem>
         </CardList>
       </InfoCard>

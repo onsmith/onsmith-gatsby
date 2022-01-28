@@ -2,10 +2,10 @@ module.exports = {
   // Site metadata for reusing common pieces of data across the site
   // See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/#sitemetadata
   siteMetadata: {
-    url: 'https://onsmith.com',
+    url: 'https://www.onsmith.com',
   },
 
-  // Plugins
+  // Gatsby plugins
   // See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/#plugins
   plugins: [
     // <head> tag management
