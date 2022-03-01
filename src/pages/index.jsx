@@ -155,16 +155,15 @@ export default function IndexPage() {
         <CardTitle>Teaching</CardTitle>
 
         <CardText>
-          I have been the primary instructor for CS courses at UNC since 2019.
-          Most recently, I teach COMP 301 Foundations of Programming (Java OOP,
-          testing, design patterns, GUIs, frameworks, concurrency) and COMP 455
-          Models of Computation (automata, formal languages, grammars, regular
-          expressions, Turing machines, decidability).
+          I have been the primary instructor for computer science courses at UNC
+          since 2019.
         </CardText>
 
         <CardText>
-          In the past, I helped teach courses in Data Compression, Modern Web
-          Programming, Software Engineering, and Intro to Programming.
+          Courses I have been involved in teaching include Data Compression,
+          Modern Web Programming, Software Engineering, Foundations of
+          Programming, Models of Languages and Computation, and Intro to
+          Programming.
         </CardText>
       </InfoCard>
 
