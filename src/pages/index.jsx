@@ -200,8 +200,8 @@ export default function IndexPage() {
         </CardText>
 
         <CardText>
-          Want to get in touch, grab a coffee, or have a conversation?
-          Here&apos;s how to reach me.
+          Want to get in touch, get coffee, or have a conversation? Here&apos;s
+          how to reach me.
         </CardText>
 
         <CardContactList>
